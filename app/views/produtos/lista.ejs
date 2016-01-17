@@ -8,14 +8,20 @@
 <body>
   <table border="1">
     <tr>
-      <th>id</th>
-      <th>nome</th>
+      <th>Id</th>
+      <th>Titulo</th>
+      <th>Descrição</th>
+      <th>Preço</th>
     </tr>
 
+    <% lista.forEach(function(element, index, array) { %>
     <tr>
-      <td>1</td>
-      <td>Anderson</td>
+      <td><%= element.id %></td>
+      <td><%= element.titulo %></td>
+      <td><%= element.descricao %></td>
+      <td><%= element.preco %></td>
     </tr>
+    <% }); %>
   </table>
 </body>
 </html>
